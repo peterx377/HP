@@ -1,4 +1,4 @@
-To simulate daily counts of covid-19 infection in each state with Hawkes Process, we construct three steps to accommodate to the lengthy runtime of the simulation.Each step is completed in its respective folder. Also, we have a correspoonding folder with the same name in the data folder for data storage.
+To simulate daily counts of covid-19 infection in each state with Hawkes Process, we construct three steps to accommodate to the lengthy runtime of the simulation.Each step is completed in its respective folder in HP. Also, we have a correspoonding folder with the same name in the data folder for data storage.
 
 I:
   - create_data_new_format.R
