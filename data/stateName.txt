@@ -9,7 +9,6 @@ Delaware
 District of Columbia
 Florida
 Georgia
-Guam
 Hawaii
 Idaho
 Illinois
@@ -46,10 +45,8 @@ Tennessee
 Texas
 Utah
 Vermont
-Virgin Islands
 Virginia
 Washington
 West Virginia
 Wisconsin
 Wyoming
-
