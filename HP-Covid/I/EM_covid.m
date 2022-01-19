@@ -31,14 +31,14 @@ for k=1:emiter
 
 %stabilize weibull; force it under 4 
 
-bup=4;
+bup=6;
 if(beta>bup)
     beta=bup;
 end
 
 % if the beta is higher than bup, then we move back to the parameters obtained 200 iterations ago and stop learning
 if(mod(k,200)==0)
-    [k/emiter mu alpha beta K0(end)]
+    %[k/emiter mu alpha beta K0(end)]
     if (beta < bup)
         last_mu = mu;
         last_alpha = alpha;

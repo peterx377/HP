@@ -1,8 +1,14 @@
 library(lubridate)
 library(tidyverse)
-setwd("~/PP/covid/HP")
+setwd("~/PP/covid/4.0")
+
+#Variables
+StartDate = "03-23-2020"
+EndDate = "09-01-2021"
+
+
 # Select Date Range
-dts=ymd(seq(mdy("03-23-2020"),mdy("09-01-2021"),1))
+dts=ymd(seq(mdy(StartDate),mdy(EndDate),1))
 dts=format(as.Date(dts, '%Y-%m-%d'), "%m-%d-%Y")
 # Retrieve Data on Covid-19 Cases
 i=1
@@ -20,7 +26,7 @@ for(i in 2:length(dts)){
   
 }
 
-not_state_list=c("Recovered","Wuhan Evacuee", "American Samoa", "Diamond Princess", "Grand Princess", "Northern Mariana Islands") # "States" to remove
+not_state_list=c("Recovered","Wuhan Evacuee", "American Samoa", "Diamond Princess", "Grand Princess", "Northern Mariana Islands", "Virgin Islands", "Guam") # "States" to remove
 # Clean up the data
 names(data_state)[1]="Province.State"
 names(data_state)[2]="Country.Region"
